@@ -1,0 +1,1 @@
+export { PhotogPage as default } from './PhotogPage';
