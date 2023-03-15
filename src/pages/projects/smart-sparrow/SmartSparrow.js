@@ -124,7 +124,7 @@ export const SmartSparrow = () => {
               <ProjectSectionHeading>The Design</ProjectSectionHeading>
               <ProjectSectionText>
                 With React, I was able to modularize my code, reuse components, and manage state more efficiently, making my codebase cleaner, more scalable, 
-                and more maintainable. But I didn't stop there. I wanted to push the boundaries of web development even further. 
+                and more maintainable. But I wanted to push my boundaries of web development even further. 
                 And then I discovered Three.js, a powerful 3D library that enables developers to create stunning visual effects and animations in the browser.
 
                 By integrating Three.js into my React-based webpage, I was able to add a new dimension of interactivity and engagement to my site, 
@@ -167,7 +167,7 @@ export const SmartSparrow = () => {
                 My decision to upgrade my webpage from a simple HTML/CSS/JS site to a React-based, Three.js-enhanced, and Next.js-optimized 
                 site was driven by my desire to create a cutting-edge, high-performance, and user-friendly web experience that showcases my skills 
                 and creativity in web development. With these powerful tools and frameworks at my disposal, I am confident that I can continue to push 
-                the boundaries of what is possible in web development and create innovative and memorable web experiences for my clients and users."
+                the boundaries of what is possible in web development and create innovative and memorable web experiences for my clients and users.
               </ProjectSectionText>
             </ProjectTextRow>
             <a href="https://github.com/aelpires/portfolio">

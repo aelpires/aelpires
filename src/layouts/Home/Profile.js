@@ -31,7 +31,7 @@ const ProfileText = ({ visible, titleId }) => (
     </Text>  
     
     <Text className={styles.description} data-visible={visible} size="l" as="p">      
-        Before the covid outbreak I started "re-learning" by myself some Front-End basics like HTML, CSS and JavaScript, 
+        Before the covid outbreak I started re-learning by myself some Front-End basics like HTML, CSS and JavaScript, 
       which led me to go back to school, this time in Porto to a Front-End Devopment bootcamp on <Link href="https://weareedit.io/">EDIT.</Link>.   
       There I learned more about HTML, CSS, JavaScript and also introduced me to UX Design, Responsive Web Development and React Foundations.
     </Text>
