@@ -209,11 +209,13 @@ This also makes it really convenient when working with properties like transform
 // polluting our jsx with the full transform in the inline style
 function Button({ offset, children }) {
   return (
+    {% raw %}
     <button className="button" style={{ '--offset': `${offset}px` }}>
       {children}
     </button>
-  )
-};
+    {% endraw %}
+  );
+}
 ```
 
 ```css
