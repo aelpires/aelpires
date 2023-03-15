@@ -39,14 +39,13 @@ const ProfileText = ({ visible, titleId }) => (
     <Text className={styles.description} data-visible={visible} size="l" as="p">  
         Time passed and I increased my knowledge and skills.
       Being comfortable with code allows me
-      to rapidly prototype and validate experiences. If you’re interested in the tools and
-      software I use check out my <Link href="/uses">uses page</Link>.
+      to rapidly prototype and validate experiences. Interested in the tools and
+      software? I use check out my <Link href="/uses">uses page</Link>.
     </Text>
 
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       In my spare time I like to go to the gym and workout, <Link href="/projects/photog">travel</Link>, play video games and{' '}
-      <Link href="/projects/blender">create digital content</Link>. I’m always down for hearing
-      about new projects, so feel free to drop me a line.
+      <Link href="/projects/blender">create digital content</Link>. Feel free to drop me a line.
     </Text>
   </Fragment>
 );

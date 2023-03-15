@@ -93,15 +93,15 @@ export function BlenderPage() {
               <ProjectSectionText>
               I have added Blender to my skillset because of my passion for creating engaging content and exploring new creative avenues. 
               As a front-end developer, I recognized the potential for Blender to elevate my skills by incorporating 3D animations and images into my projects. 
-              Blender's extensive features and tools have enabled me to produce impressive visuals that captivate audiences and add an extra dimension to my designs.
+              Blenders extensive features and tools have enabled me to produce impressive visuals that captivate audiences and add an extra dimension to my designs.
               </ProjectSectionText>
               <ProjectSectionText>
               Blender 3D is a powerful open-source software for creating 3D models, animations, and visual effects. 
               It offers a wide range of features and tools that make it an ideal choice for both beginners and professionals in the 3D industry. 
-              One of the biggest benefits of using Blender 3D is that it's completely free, making it accessible to anyone who wants to explore the world of 3D art. 
+              One of the biggest benefits of using Blender 3D, completely free, making it accessible to anyone who wants to explore the world of 3D art. 
               Additionally, its user-friendly interface and extensive community support make it easy to learn and use. 
               Blender 3D also offers flexibility and customization options, allowing users to create unique and personalized projects. 
-              Whether you're a hobbyist or a professional, Blender 3D is a great software to have in your portfolio, 
+              Whether a hobby or a professional, Blender 3D is a great software to have in your portfolio, 
               as it can help showcase your skills and creativity in 3D art and design.
               </ProjectSectionText>
             </div>
