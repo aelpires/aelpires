@@ -13,6 +13,8 @@ export const Heading = ({
 }) => {
   const clampedLevel = Math.min(Math.max(level, 0), 5);
   const Component = as || `h${Math.max(clampedLevel, 1)}`;
+  
+  
 
   return (
     <Fragment>
@@ -25,6 +27,14 @@ export const Heading = ({
       >
         {children}
       </Component>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-VC28TMTEYG"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
+
+          gtag('config', 'G-VC28TMTEYG');
+        </script>
     </Fragment>
   );
 };
