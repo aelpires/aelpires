@@ -1,7 +1,8 @@
 import GothamBook from 'assets/fonts/gotham-book.woff2';
 import GothamMedium from 'assets/fonts/gotham-medium.woff2';
 import { fontStyles, tokenStyles } from 'components/ThemeProvider';
-import { Head, Html, Main, NextScript, Script } from 'next/document';
+import { Head, Html, Main, NextScript} from 'next/document';
+import Script from 'next/script';
 
 export default function Document() {
   return (
