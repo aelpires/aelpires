@@ -1,6 +1,6 @@
 import 'layouts/App/reset.css';
 import 'layouts/App/global.css';
-
+import Script from 'next/script';
 import { Navbar } from 'components/Navbar';
 import { ThemeProvider } from 'components/ThemeProvider';
 import { tokens } from 'components/ThemeProvider/theme';
@@ -70,6 +70,20 @@ const App = ({ Component, pageProps }) => {
                 rel="canonical"
                 href={`${process.env.NEXT_PUBLIC_WEBSITE_URL}${canonicalRoute}`}
               />
+              <Script
+                strategy="lazyOnload"
+                src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS}`}
+              />
+              <Script id="ga-script" strategy="lazyOnload">
+                {`
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${process.env.GOOGLE_ANALYTICS}', {
+                    page_path: window.location.pathname,
+                  });
+                    `}
+              </Script>
             </Head>
             <VisuallyHidden
               showOnFocus
