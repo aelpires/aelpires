@@ -121,7 +121,7 @@ export const Uses = () => {
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>GPU</TableHeadCell>
-                    <TableCell>GForce 3070TI 6GB</TableCell>
+                    <TableCell>GForce GTX 1060 6GB</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Memory</TableHeadCell>
@@ -133,7 +133,7 @@ export const Uses = () => {
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Monitor</TableHeadCell>
-                    <TableCell>1440p IPS 144hz LG 27GL850</TableCell>
+                    <TableCell> AOC 24" 144hz</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Keyboard</TableHeadCell>
@@ -149,7 +149,7 @@ export const Uses = () => {
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Headphones</TableHeadCell>
-                    <TableCell>HyperX/Apple Airpods</TableCell>
+                    <TableCell>HYPERX Cloud II/Apple Airpods</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Microphone</TableHeadCell>
