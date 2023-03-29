@@ -125,7 +125,7 @@ export const Uses = () => {
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Memory</TableHeadCell>
-                    <TableCell>Gigabyte 16GB DDR6*2</TableCell>
+                    <TableCell>Gigabyte 8GB DDR5*2</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Motherboard</TableHeadCell>
@@ -133,7 +133,7 @@ export const Uses = () => {
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Monitor</TableHeadCell>
-                    <TableCell> AOC 24" 144hz</TableCell>
+                    <TableCell> AOC 24 144hz</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Keyboard</TableHeadCell>
@@ -142,10 +142,6 @@ export const Uses = () => {
                   <TableRow>
                     <TableHeadCell>Mouse</TableHeadCell>
                     <TableCell>Razer Naga trinity</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Laptop</TableHeadCell>
-                    <TableCell>Macbook Pro 14″ (2022 M1 Max)</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Headphones</TableHeadCell>
