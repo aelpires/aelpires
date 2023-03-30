@@ -4,6 +4,7 @@ import { Navbar } from 'components/Navbar';
 import { ThemeProvider } from 'components/ThemeProvider';
 import { tokens } from 'components/ThemeProvider/theme';
 import { VisuallyHidden } from 'components/VisuallyHidden';
+import * as Fathom from 'fathom-client';
 import { AnimatePresence, LazyMotion, domAnimation, m } from 'framer-motion';
 import { useFoucFix, useLocalStorage } from 'hooks';
 import styles from 'layouts/App/App.module.css';
@@ -31,6 +32,7 @@ const App = ({ Component, pageProps }) => {
 
   // Handle analytics pageview recording
   useEffect(() => {
+    if (process.env.NODE_ENV === 'development') return;
 
     // Record a pageview when route changes
     events.on('routeChangeComplete', onRouteChangeComplete);
