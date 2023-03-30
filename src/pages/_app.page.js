@@ -4,7 +4,6 @@ import { Navbar } from 'components/Navbar';
 import { ThemeProvider } from 'components/ThemeProvider';
 import { tokens } from 'components/ThemeProvider/theme';
 import { VisuallyHidden } from 'components/VisuallyHidden';
-import * as Fathom from 'fathom-client';
 import { AnimatePresence, LazyMotion, domAnimation, m } from 'framer-motion';
 import { useFoucFix, useLocalStorage } from 'hooks';
 import styles from 'layouts/App/App.module.css';
@@ -32,15 +31,6 @@ const App = ({ Component, pageProps }) => {
 
   // Handle analytics pageview recording
   useEffect(() => {
-    if (process.env.NODE_ENV === 'development') return;
-
-    Fathom.load(process.env.NEXT_PUBLIC_FATHOM_ID, {
-      url: process.env.NEXT_PUBLIC_FATHOM_URL,
-    });
-
-    const onRouteChangeComplete = () => {
-      Fathom.trackPageview({ url: window.location.pathname });
-    };
 
     // Record a pageview when route changes
     events.on('routeChangeComplete', onRouteChangeComplete);
