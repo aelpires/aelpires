@@ -7,7 +7,7 @@
     "deploy:headers": "serverless deploy function --function headers --stage production"
   },
   "dependencies": {
-    "@aws-sdk/client-ses": "^3.145.0",
+    "@aws-sdk/client-ses": "^3.348.0",
     "cors": "^2.8.5",
     "dompurify": "^2.3.10",
     "express": "^4.18.1",
