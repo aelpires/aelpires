@@ -20,7 +20,7 @@ export const socialLinks = [
     icon: 'twitter',
   },
   {
-    label: 'FInstagram',
+    label: 'Instagram',
     url: 'https://www.instagram.com/alexandre.lpires/',
     icon: 'figma',
   },

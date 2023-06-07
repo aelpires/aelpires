@@ -14,6 +14,8 @@ import { useRouter } from 'next/router';
 import { Fragment, createContext, useEffect, useReducer } from 'react';
 import { msToNum } from 'utils/style';
 import { ScrollRestore } from '../layouts/App/ScrollRestore';
+import 'pages/projects/smart-sparrow/Skills/AboutSkills.css';
+
 
 export const AppContext = createContext({});
 

@@ -1,6 +1,6 @@
-import blenderBackgroundLarge from 'assets/volkihar-background-large.jpg';
-import blenderBackgroundPlaceholder from 'assets/volkihar-background-placeholder.jpg';
-import blenderBackground from 'assets/volkihar-background.jpg';
+import photoBackgroundLarge from 'assets/ftgf-background-large.jpg';
+import blenderBackgroundPlaceholder from 'assets/blender-background-placeholder.jpg';
+import photoBackground from 'assets/ftgf-background.jpg';
 import blenderSlidePlaceholder from 'assets/volkihar-slide-placeholder.jpg';
 import photoSlide1Large from 'assets/photoslide1-large.jpg';
 import photoSlide1 from 'assets/photoslide1.jpg';
@@ -58,7 +58,7 @@ const Carousel = dynamic(() => import('components/Carousel').then(mod => mod.Car
 
 const title = 'Photography/video';
 const description =
-  'Capture every detail with our professional photography and videography services, our equipment includes a camera with a wide range of lenses, a drone and a GoPro. We also offer post-editing services to enhance your memories. Contact us to learn more.';
+  'Photography and video offer a unique way to share your perspective on the world, allowing you to capture and showcase what you see and feel. Through the lens, you can communicate your thoughts, emotions, and experiences in a powerful and creative way. ';
 const roles = ['Photography','Videography','Post-Editing'];
 
 export function PhotogPage() {
@@ -81,7 +81,7 @@ export function PhotogPage() {
       />
       <ProjectContainer>
           <ProjectBackground
-            srcSet={[blenderBackground, blenderBackgroundLarge]}
+            srcSet={[photoBackground, photoBackgroundLarge]}
             placeholder={blenderBackgroundPlaceholder}
             opacity={0.5}
           />

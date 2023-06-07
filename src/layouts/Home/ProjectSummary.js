@@ -1,4 +1,4 @@
-import projectKatakana from 'assets/katakana-project.svg?url';
+import japChar from 'assets/katakana-project.svg?url';
 import { Button } from 'components/Button';
 import { Divider } from 'components/Divider';
 import { Heading } from 'components/Heading';
@@ -50,7 +50,7 @@ export const ProjectSummary = ({
       className={styles.svg}
       data-device={device}
     >
-      <use href={`${projectKatakana}#katakana-project`} />
+      <use href={`${japChar}#katakana-project`} />
     </svg>
   );
 

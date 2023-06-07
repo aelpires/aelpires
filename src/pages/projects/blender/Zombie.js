@@ -1,10 +1,10 @@
-import vknx from 'assets/volkihar-cube-nx.jpg';
-import vkny from 'assets/volkihar-cube-ny.jpg';
-import vknz from 'assets/volkihar-cube-nz.jpg';
-import vkpx from 'assets/volkihar-cube-px.jpg';
-import vkpy from 'assets/volkihar-cube-py.jpg';
-import vkpz from 'assets/volkihar-cube-pz.jpg';
-import zombie from 'assets/volkihar-knight.glb';
+import vknx from 'assets/cube-nx.jpg';
+import vkny from 'assets/cube-ny.jpg';
+import vknz from 'assets/cube-nz.jpg';
+import vkpx from 'assets/cube-px.jpg';
+import vkpy from 'assets/cube-py.jpg';
+import vkpz from 'assets/cube-pz.jpg';
+import zombie from 'assets/zombie.glb';
 import { Loader } from 'components/Loader';
 import { tokens } from 'components/ThemeProvider/theme';
 import { Transition } from 'components/Transition';

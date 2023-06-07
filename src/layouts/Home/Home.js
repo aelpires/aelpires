@@ -4,12 +4,12 @@ import gamestackTexture2 from 'assets/gamestack-list.jpg';
 import gamestackTextureLarge from 'assets/gamestack-login-large.jpg';
 import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
 import gamestackTexture from 'assets/gamestack-login.jpg';
+import VsImage from 'assets/dsBuffer.jpg';
+import VsImageLarge from 'assets/dsBuffer-large.jpg';
 import sliceTextureLarge from 'assets/slice-app-large.jpg';
 import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
 import sliceTexture from 'assets/slice-app.jpg';
-import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
-import sprTexture from 'assets/spr-lesson-builder-dark.jpg';
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
 import { Intro } from 'layouts/Home/Intro';
@@ -18,7 +18,7 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
-const disciplines = ['Photographer', 'Designer', 'Animator', 'Illustrator'];
+const disciplines = ['Designer', 'Animator', 'Photographer', 'Illustrator'];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -83,8 +83,8 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of the Internet"
-        description="My Portfolio"
+        title="What I do:"
+        description="Portfolio, Skills-set and others.."
         buttonText="View projects"
         buttonLink="/projects/smart-sparrow"
         model={{
@@ -92,7 +92,7 @@ export const Home = () => {
           alt: 'Old website with skills ',
           textures: [
             {
-              srcSet: [sprTexture, sprTextureLarge],
+              srcSet: [VsImage, VsImageLarge],
               placeholder: sprTexturePlaceholder,
             },
           ],
@@ -104,8 +104,8 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Weather App"
-        description="Design and development for an weather tracking app built in JavaScript with fully funtional free API."
+        title="CodeCove Innovations"
+        description="Designing the future of the Internet"
         buttonText="View Code"
         buttonLink="https://github.com/aelpires/WeatherApp"
         model={{
@@ -128,8 +128,8 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Presets and LUTs Store"
-        description="Enhance the quality of your photos with our Premium Presets for Photoshop and LightRoom."
+        title="Online Store"
+        description="Get Inspired and Streamline Your Workflow with Our Selection of Web Templates, Apps, and Color Grading Pre-Sets/LUTs"
         buttonText="Go to Store"
         buttonLink="/projects/slice"
         model={{
