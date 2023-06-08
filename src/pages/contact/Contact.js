@@ -5,7 +5,6 @@ import { Footer } from 'components/Footer';
 import { Heading } from 'components/Heading';
 import { Icon } from 'components/Icon';
 import { Input } from 'components/Input';
-import { sendEmail } from './sendEmail';
 import { Meta } from 'components/Meta';
 import { Section } from 'components/Section';
 import { Text } from 'components/Text';
@@ -16,8 +15,6 @@ import { useRef, useState } from 'react';
 import { cssProps, msToNum, numToMs } from 'utils/style';
 import styles from './Contact.module.css';
 
-
-
 export const Contact = () => {
   const errorRef = useRef();
   const email = useFormInput('');
@@ -27,22 +24,29 @@ export const Contact = () => {
   const [statusError, setStatusError] = useState('');
   const initDelay = tokens.base.durationS;
 
-  const onSubmit = async (event) => {
+  const onSubmit = (event) => {
     event.preventDefault();
     setStatusError('');
-  
+
     if (sending) return;
-  
+
     try {
       setSending(true);
-  
-      await sendEmail(email.value, message.value);
-  
+
+      const predefinedEmail = 'aelpires@gmail.com';
+      const subject = 'Contact Form Submission';
+      const body = `Email: ${email.value}\n\nMessage: ${message.value}`;
+
+      const mailtoLink = `mailto:${predefinedEmail}?subject=${encodeURIComponent(
+        subject
+      )}&body=${encodeURIComponent(body)}`;
+
+      window.location.href = mailtoLink;
+    } catch (error) {
+      setStatusError(error.message);
+    } finally {
       setComplete(true);
       setSending(false);
-    } catch (error) {
-      setSending(false);
-      setStatusError(error.message);
     }
   };
 
@@ -95,7 +99,7 @@ export const Contact = () => {
             />
 
             <Transition in={statusError} timeout={msToNum(tokens.base.durationM)}>
-              {errorStatus => (
+              {(errorStatus) => (
                 <div
                   className={styles.formError}
                   data-status={errorStatus}
@@ -131,12 +135,7 @@ export const Contact = () => {
       <Transition unmount in={complete}>
         {(visible, status) => (
           <div className={styles.complete} aria-live="polite">
-            <Heading
-              level={3}
-              as="h3"
-              className={styles.completeTitle}
-              data-status={status}
-            >
+            <Heading level={3} as="h3" className={styles.completeTitle} data-status={status}>
               Message Sent
             </Heading>
             <Text
@@ -146,7 +145,7 @@ export const Contact = () => {
               data-status={status}
               style={getDelay(tokens.base.durationXS)}
             >
-              I’ll get back to you within a couple days, sit tight
+              I’ll get back to you within a couple of days, sit tight
             </Text>
             <Button
               secondary
