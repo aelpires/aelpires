@@ -31,7 +31,7 @@
     "rehype-slug": "^5.0.1",
     "storybook": "^6.5.10",
     "storybook-addon-next": "^1.6.7",
-    "stylelint": "^14.9.1",
+    "stylelint": "^15.10.1",
     "stylelint-config-css-modules": "^4.1.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard": "^26.0.0",
